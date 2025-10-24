@@ -1,6 +1,3 @@
-<img width="1536" height="536" alt="dp_banner" src="https://github.com/user-attachments/assets/824825ec-663b-48d9-9c05-c0a1c7a53594" />
-
-
 # Dither-Pro
 
 ---
