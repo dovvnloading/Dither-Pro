@@ -1,4 +1,9 @@
+<img width="1536" height="536" alt="dp_banner" src="https://github.com/user-attachments/assets/824825ec-663b-48d9-9c05-c0a1c7a53594" />
+
+
 # Dither-Pro
+
+---
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python Version">
