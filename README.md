@@ -1,84 +1,131 @@
 # Dither-Pro
 
+<div align="center">
+
+  ![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+  ![PySide6](https://img.shields.io/badge/PySide6-Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white)
+  ![Numba](https://img.shields.io/badge/Numba-Accelerated-00A3E0?style=for-the-badge&logo=numba&logoColor=white)
+  ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+
+  **A high-performance, algorithmic dithering suite built for digital artists and developers.**
+  
+  [Features](#features) • [Installation](#installation) • [Usage](#usage) • [Algorithms](#algorithms)
+
+</div>
+
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python Version">
-  <img src="https://img.shields.io/badge/Framework-PySide6-2492D1.svg" alt="PySide6">
-  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License">
-</p>
+**Dither-Pro** is a specialized image processing tool that transforms standard images into limited-color retro aesthetic masterpieces. Unlike basic converters, Dither-Pro utilizes **Numba JIT compilation** to accelerate complex error-diffusion and ordered dithering algorithms, allowing for high-resolution processing in near real-time.
 
-Dither-Pro is a high-performance, feature-rich dithering tool designed for artists and developers seeking granular control over image processing. Built with Python and a modern PySide6 interface, it provides a responsive and powerful workflow for transforming images into stylized, limited-color works of art. The backend is heavily optimized with Numba and NumPy for a fluid, real-time user experience.
+Built with a modern **PySide6** interface, it bridges the gap between command-line libraries and professional graphic design software, offering granular control over palettes, dithering strength, and post-process color grading.
+
+## 📸 Interface
 
 <p align="center">
-  <img width="1202" height="732" alt="Dither-Pro Application Screenshot" src="https://github.com/user-attachments/assets/46e8da82-4646-4fde-aa57-4eb1acdb8bd3">
+  <img width="100%" alt="Dither-Pro Application Screenshot" src="https://github.com/user-attachments/assets/46e8da82-4646-4fde-aa57-4eb1acdb8bd3">
 </p>
 
-## Features
+## ✨ Features
 
-*   **Extensive Algorithm Library**: Go beyond the basics with a wide selection of dithering algorithms, each providing a unique aesthetic:
-    *   **Error-Diffusion**: Floyd-Steinberg, Atkinson, Jarvis, Judice, Ninke (JJN), Stucki
-    *   **Ordered**: Bayer, Clustered Dot Halftone
-    *   **Stochastic**: Random
-*   **Complete Palette Control**: Precisely define the color space of your output image.
-    *   **Automatic**: Generate an optimal palette directly from the source image.
-    *   **Grayscale**: Convert the image to a specified number of grayscale tones.
-    *   **Predefined**: Apply classic, retro palettes like Game Boy, PICO-8, and CGA.
-*   **Real-Time Post-Processing**: Interactively adjust the dithered output without re-rendering.
-    *   **HSV Color Adjustment**: Modify the Hue, Saturation, and Value of the final dithered palette in real-time.
-    *   **Color Grading LUTs**: Apply post-process Look-Up Tables (LUTs) for effects like Sepia, Invert, and Cool Tone.
-*   **Fine-Grained Adjustments**: Control the number of output colors (2-256) and the overall strength of the dithering effect.
-*   **Modern & Responsive UI**: A clean, tabbed dark-theme interface built with PySide6 that is intuitive and scales correctly.
-*   **High-Performance Backend**: Core algorithms are JIT-compiled with Numba or vectorized with NumPy to handle large images with minimal delay.
+### 🎨 Advanced Dithering Engine
+*   **Error Diffusion**: Implements classic and modern diffusion kernels including **Floyd-Steinberg**, **Atkinson**, **Jarvis-Judice-Ninke (JJN)**, and **Stucki**.
+*   **Ordered Dithering**: Offers **Bayer** matrix (8x8) and **Clustered Dot Halftone** for retro printing effects.
+*   **Stochastic**: Random dithering with controllable noise thresholds.
+*   **Variable Strength**: Blend the original image with the dithered output using the "Strength" slider for subtle texturing.
 
-## Getting Started
+### 🌈 Palette Management
+*   **Automatic Quantization**: Dynamically generates the optimal palette from the source image.
+*   **Retro Presets**: Built-in support for iconic systems:
+    *   **Game Boy** (4-color greenscale)
+    *   **PICO-8** (Fantasy console 16-color)
+    *   **CGA** (Classic DOS palettes)
+*   **Grayscale Control**: Custom bit-depth grayscale conversion.
+*   **Color Count**: Reduce images down to as few as 2 colors or up to 256.
 
-Follow these instructions to get Dither-Pro running on your local machine.
+### 🎛️ Real-Time Post-Processing
+*   **HSV Tuning**: Shift Hue, Saturation, and Value of the *final dithered result* without re-processing the geometry.
+*   **LUT Support**: Apply look-up tables (color grading) to the output.
+*   **Non-Destructive**: Switch algorithms or palettes instantly; the backend handles the heavy lifting.
+
+## 🚀 Installation
 
 ### Prerequisites
+*   Python 3.8+
+*   pip
 
-*   Python 3.8 or newer
-*   `pip` (Python package installer)
+### Quick Start
 
-### Installation & Usage
-
-1.  **Clone the repository:**
-    ```sh
+1.  **Clone the Repository**
+    ```bash
     git clone https://github.com/dovvnloading/Dither-Pro.git
     cd Dither-Pro
     ```
 
-2.  **Create a virtual environment (Recommended):**
-    ```sh
+2.  **Set up Virtual Environment (Recommended)**
+    ```bash
+    # Windows
     python -m venv venv
-    # On Windows
     .\venv\Scripts\activate
-    # On macOS/Linux
+
+    # macOS/Linux
+    python3 -m venv venv
     source venv/bin/activate
     ```
 
-3.  **Install the required dependencies:**
-    A `requirements.txt` file is provided for easy installation.
-    ```sh
+3.  **Install Dependencies**
+    ```bash
     pip install -r requirements.txt
     ```
-    The dependencies are: `PySide6`, `numpy`, `numba`, `Pillow`.
+    *Core dependencies: `PySide6`, `numpy`, `numba`, `Pillow`*
 
-4.  **Run the application:**
-    ```sh
-    python Dither_app.py
+4.  **Launch**
+    ```bash
+    # Windows
+    python Dither_app\Dither_app\Dither_app.py
+    
+    # macOS/Linux (adjust path as needed based on where you run it)
+    python Dither_app/Dither_app/Dither_app.py
     ```
 
-## Development
+## 📖 Usage
 
-For developers using Visual Studio, a `.sln` solution file is included in the repository for convenience. This allows you to open the project directly in Visual Studio with the Python workload installed.
+The interface is divided into three workflow tabs:
 
-The project is structured into four main files for a clean separation of concerns:
-*   `Dither_app.py`: The main application entry point, containing all UI code (`QMainWindow`).
-*   `worker.py`: Defines the `QObject` worker for multithreaded image processing.
-*   `algorithms.py`: Contains all dithering algorithms and performance-critical functions. This module is UI-agnostic.
-*   `utils.py`: Contains helper classes and functions, such as the LUT application logic.
+### 1. Dithering Tab
+This is your main workspace.
+*   **Algorithm**: Select the math used to disperse pixels (e.g., *Atkinson* for high-contrast, *Floyd-Steinberg* for smooth gradients).
+*   **Palette**: Choose "Auto" to keep the original colors (reduced), or pick a preset like "Game Boy" for a stylized look.
+*   **Colors/Strength**: 
+    *   *Colors*: Defines how many unique colors are allowed in the output (2-256).
+    *   *Strength*: At 100%, pixels are strictly snapped to the palette. Lower values blend the original image back in.
 
-## License
+### 2. Color Adjust Tab
+Modify the output *after* dithering.
+*   **Hue**: Rotate the color spectrum.
+*   **Saturation**: Desaturate for a faded look or boost for vibrancy.
+*   **Value**: Adjust brightness/darkness.
+*   *Note: These operations are vectorized with NumPy for instant feedback.*
 
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+### 3. Grading / LUT Tab
+Apply final stylistic filters.
+*   Select from available Look-Up Tables (LUTs) to tint or wash the image.
+
+## 🧠 Technical Details
+
+**Performance Optimization**
+Dithering—specifically error diffusion—is inherently serial (pixel B depends on the error from pixel A). Python loops are typically too slow for this. Dither-Pro uses **Numba** to JIT-compile these algorithms into machine code, achieving performance comparable to C++.
+
+**Architecture**
+*   `Dither_app.py`: Main UI thread (PySide6).
+*   `worker.py`: Dedicated `QThread` worker to prevent UI freezing during heavy processing.
+*   `algorithms.py`: Pure mathematical implementations of dithering kernels, decoupled from the UI.
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  Built with ❤️ by <a href="https://github.com/dovvnloading">dovvnloading</a>
+</p>
