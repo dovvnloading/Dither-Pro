@@ -19,21 +19,21 @@
 
 Built with a modern **PySide6** interface, it bridges the gap between command-line libraries and professional graphic design software, offering granular control over palettes, dithering strength, and post-process color grading.
 
-## 📸 Interface
+## Interface
 
 <p align="center">
   <img width="100%" alt="Dither-Pro Application Screenshot" src="https://github.com/user-attachments/assets/46e8da82-4646-4fde-aa57-4eb1acdb8bd3">
 </p>
 
-## ✨ Features
+## Features
 
-### 🎨 Advanced Dithering Engine
+### Advanced Dithering Engine
 *   **Error Diffusion**: Implements classic and modern diffusion kernels including **Floyd-Steinberg**, **Atkinson**, **Jarvis-Judice-Ninke (JJN)**, and **Stucki**.
 *   **Ordered Dithering**: Offers **Bayer** matrix (8x8) and **Clustered Dot Halftone** for retro printing effects.
 *   **Stochastic**: Random dithering with controllable noise thresholds.
 *   **Variable Strength**: Blend the original image with the dithered output using the "Strength" slider for subtle texturing.
 
-### 🌈 Palette Management
+### Palette Management
 *   **Automatic Quantization**: Dynamically generates the optimal palette from the source image.
 *   **Retro Presets**: Built-in support for iconic systems:
     *   **Game Boy** (4-color greenscale)
@@ -42,12 +42,12 @@ Built with a modern **PySide6** interface, it bridges the gap between command-li
 *   **Grayscale Control**: Custom bit-depth grayscale conversion.
 *   **Color Count**: Reduce images down to as few as 2 colors or up to 256.
 
-### 🎛️ Real-Time Post-Processing
+### Real-Time Post-Processing
 *   **HSV Tuning**: Shift Hue, Saturation, and Value of the *final dithered result* without re-processing the geometry.
 *   **LUT Support**: Apply look-up tables (color grading) to the output.
 *   **Non-Destructive**: Switch algorithms or palettes instantly; the backend handles the heavy lifting.
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 *   Python 3.8+
@@ -87,7 +87,7 @@ Built with a modern **PySide6** interface, it bridges the gap between command-li
     python Dither_app/Dither_app/Dither_app.py
     ```
 
-## 📖 Usage
+## Usage
 
 The interface is divided into three workflow tabs:
 
@@ -110,7 +110,7 @@ Modify the output *after* dithering.
 Apply final stylistic filters.
 *   Select from available Look-Up Tables (LUTs) to tint or wash the image.
 
-## 🧠 Technical Details
+## Technical Details
 
 **Performance Optimization**
 Dithering—specifically error diffusion—is inherently serial (pixel B depends on the error from pixel A). Python loops are typically too slow for this. Dither-Pro uses **Numba** to JIT-compile these algorithms into machine code, achieving performance comparable to C++.
@@ -120,12 +120,12 @@ Dithering—specifically error diffusion—is inherently serial (pixel B depends
 *   `worker.py`: Dedicated `QThread` worker to prevent UI freezing during heavy processing.
 *   `algorithms.py`: Pure mathematical implementations of dithering kernels, decoupled from the UI.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
 <p align="center">
-  Built with ❤️ by <a href="https://github.com/dovvnloading">dovvnloading</a>
+  Built by <a href="https://github.com/dovvnloading">dovvnloading</a>
 </p>
