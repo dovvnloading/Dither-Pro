@@ -9,7 +9,7 @@
 ![GitHub Issues](https://img.shields.io/github/issues/dovvnloading/Dither-Pro?style=flat&label=Issues&color=EB3B5A)
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/dovvnloading/Dither-Pro?style=flat&label=Last%20Commit&color=5BBCDC)
 
-## Unleash Retro Aesthetics with Modern Performance
+## Advanced Dithering for Modern Digital Artistry
 
 Dither-Pro is a cutting-edge, high-performance image dithering toolkit meticulously engineered for digital artists, game developers, and retro enthusiasts. Harnessing the power of Numba's JIT compilation, it delivers unparalleled real-time processing of advanced error-diffusion and ordered dithering algorithms, enabling precise visual transformations with a distinctive vintage flair.
 
