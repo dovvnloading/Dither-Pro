@@ -32,7 +32,7 @@ Take full command of your color choices with intelligent and flexible palette to
 *   **Integrated Presets**: Access a curated collection of iconic retro palettes, including Game Boy, PICO-8, and CGA, ready to apply.
 *   **Extensive Customization**: Fine-tune output with grayscale precision and adjustable color counts, supporting a spectrum from 2 to 256 colors.
 
-### 🖼️ Post-Processing Capabilities
+### Post-Processing Capabilities
 Refine your dithered masterpieces with powerful, real-time adjustments.
 *   **HSV Tuning**: Perform immediate, non-destructive adjustments to Hue, Saturation, and Value on the dithered output for instant visual feedback.
 *   **LUT Support**: Apply professional Look-Up Tables (LUTs) to achieve sophisticated color grading, stylistic effects, and atmospheric moods.
