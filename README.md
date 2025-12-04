@@ -79,7 +79,7 @@ Getting Dither-Pro up and running is straightforward.
     python Dither_app/Dither_app/Dither_app.py
     ```
 
-## 💡 Usage
+## Usage
 
 The Dither-Pro application is intuitively structured around three primary workflows for efficient image manipulation:
 
