@@ -15,11 +15,11 @@ Dither-Pro is a cutting-edge, high-performance image dithering toolkit meticulou
 
 Go beyond conventional image converters and gain granular control over your pixel art. Dither-Pro empowers you to craft stunning visual effects, manage intricate color palettes, and optimize your workflow with a fluid, responsive interface built with PySide6.
 
-## ✨ Key Features
+## Key Features
 
-Dither-Pro combines artistic control with technical excellence:
+Dither-Pro provides a comprehensive set of features designed for both artistic control and technical excellence:
 
-### ⚙️ Advanced Dithering Engine
+### Advanced Dithering Engine
 Experience a robust suite of algorithms for nuanced pixel distribution and unique visual textures.
 *   **Error Diffusion**: Implement classic algorithms like Floyd-Steinberg, Atkinson, Jarvis-Judice-Ninke (JJN), and Stucki for subtle, high-fidelity dithering.
 *   **Ordered Dithering**: Utilize structured patterns such as Bayer Matrix (8x8) and Clustered Dot Halftone for distinct, geometric effects.
