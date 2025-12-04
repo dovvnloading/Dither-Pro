@@ -114,7 +114,7 @@ We are actively working on expanding Dither-Pro's reach:
 *   **macOS Support**: Plans are underway to provide native support for macOS, ensuring a consistent and high-performance experience across Apple platforms.
 *   **Web Application**: A web-based version is in development to offer Dither-Pro's powerful features directly in your browser, enhancing accessibility and collaboration.
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License. Refer to the [LICENSE](LICENSE) file for comprehensive details.
 
