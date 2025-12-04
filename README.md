@@ -38,7 +38,7 @@ Refine your dithered masterpieces with powerful, real-time adjustments.
 *   **LUT Support**: Apply professional Look-Up Tables (LUTs) to achieve sophisticated color grading, stylistic effects, and atmospheric moods.
 *   **Optimized Performance**: Benefit from an instant feedback loop, powered by vectorized NumPy operations and Numba acceleration for blazing-fast processing.
 
-## 📸 Screenshots
+## Screenshots
 
 *(To be added: Include screenshots or GIFs showcasing the application's interface and various dithering effects here.)*
 
