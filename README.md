@@ -95,7 +95,7 @@ Refine your dithered images with real-time, non-destructive modifications.
 *   **Saturation**: Intensify or desaturate colors for desired vibrancy or muted tones.
 *   **Value**: Control the overall brightness and contrast characteristics of your image.
 
-### 🎨 Grading Suite
+### Grading Suite
 Apply sophisticated stylistic filters to dramatically alter the mood and visual style of your final image.
 *   **LUT Application**: Utilize Look-Up Tables (LUTs) to apply complex color grading and artistic effects, instantly transforming your image's aesthetic.
 
