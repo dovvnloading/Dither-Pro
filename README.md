@@ -89,7 +89,7 @@ This is your central hub for transforming images with pixel precision.
 *   **Palette Management**: Efficiently manage color palettes using integrated presets or intelligent auto-generation.
 *   **Output Refinement**: Precisely adjust the final dithered output with configurable color counts and dithering strength.
 
-### ⚙️ Color Adjustment Panel
+### Color Adjustment Panel
 Refine your dithered images with real-time, non-destructive modifications.
 *   **Hue**: Globally shift the color spectrum to achieve different moods.
 *   **Saturation**: Intensify or desaturate colors for desired vibrancy or muted tones.
