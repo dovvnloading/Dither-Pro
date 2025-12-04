@@ -83,7 +83,7 @@ Getting Dither-Pro up and running is straightforward.
 
 The Dither-Pro application is intuitively structured around three primary workflows for efficient image manipulation:
 
-### 🌟 Dithering Workspace
+### Dithering Workspace
 This is your central hub for transforming images with pixel precision.
 *   **Algorithm Selection**: Choose from a diverse range of advanced algorithms to control how pixels are distributed.
 *   **Palette Management**: Efficiently manage color palettes using integrated presets or intelligent auto-generation.
