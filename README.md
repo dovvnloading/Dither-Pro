@@ -42,7 +42,7 @@ Refine your dithered masterpieces with powerful, real-time adjustments.
 
 *(To be added: Include screenshots or GIFs showcasing the application's interface and various dithering effects here.)*
 
-## 🚀 Installation
+## Installation
 
 Getting Dither-Pro up and running is straightforward.
 
