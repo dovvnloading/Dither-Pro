@@ -99,13 +99,20 @@ Refine your dithered images with real-time, non-destructive modifications.
 Apply sophisticated stylistic filters to dramatically alter the mood and visual style of your final image.
 *   **LUT Application**: Utilize Look-Up Tables (LUTs) to apply complex color grading and artistic effects, instantly transforming your image's aesthetic.
 
-## 🏛️ Technical Architecture
+## Technical Architecture
 
 Dither-Pro is engineered for optimal performance, responsiveness, and maintainability, ensuring a seamless user experience.
 
 *   **UI Layer**: Constructed with `PySide6`, providing a robust, native cross-platform graphical user interface that feels fluid and responsive.
 *   **Concurrency Management**: Utilizes `QThread` workers to efficiently offload computationally intensive processing tasks from the main UI thread, ensuring a consistently fluid and non-freezing interface.
 *   **High-Performance Computation**: Critical dithering and image processing algorithms are meticulously implemented in `algorithms.py` and are highly optimized with `numba`. This achieves C-like performance speeds essential for real-time pixel manipulation of high-resolution assets.
+
+### Future Enhancements
+
+We are actively working on expanding Dither-Pro's reach:
+
+*   **macOS Support**: Plans are underway to provide native support for macOS, ensuring a consistent and high-performance experience across Apple platforms.
+*   **Web Application**: A web-based version is in development to offer Dither-Pro's powerful features directly in your browser, enhancing accessibility and collaboration.
 
 ## 📜 License
 
