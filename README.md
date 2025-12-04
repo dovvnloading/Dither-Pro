@@ -26,7 +26,7 @@ Experience a robust suite of algorithms for nuanced pixel distribution and uniqu
 *   **Stochastic Dithering**: Introduce controlled randomness to generate organic textures and effectively minimize banding artifacts.
 *   **Variable Strength**: Seamlessly blend between the original and dithered images to fine-tune the visual impact and intensity.
 
-### 🌈 Dynamic Palette Management
+### Dynamic Palette Management
 Take full command of your color choices with intelligent and flexible palette tools.
 *   **Smart Quantization**: Automatically generate optimized color palettes directly from your source images, preserving visual fidelity.
 *   **Integrated Presets**: Access a curated collection of iconic retro palettes, including Game Boy, PICO-8, and CGA, ready to apply.
