@@ -38,10 +38,6 @@ Refine your dithered masterpieces with powerful, real-time adjustments.
 *   **LUT Support**: Apply professional Look-Up Tables (LUTs) to achieve sophisticated color grading, stylistic effects, and atmospheric moods.
 *   **Optimized Performance**: Benefit from an instant feedback loop, powered by vectorized NumPy operations and Numba acceleration for blazing-fast processing.
 
-## Screenshots
-
-*(To be added: Include screenshots or GIFs showcasing the application's interface and various dithering effects here.)*
-
 ## Installation
 
 Getting Dither-Pro up and running is straightforward.
@@ -107,21 +103,8 @@ Dither-Pro is engineered for optimal performance, responsiveness, and maintainab
 *   **Concurrency Management**: Utilizes `QThread` workers to efficiently offload computationally intensive processing tasks from the main UI thread, ensuring a consistently fluid and non-freezing interface.
 *   **High-Performance Computation**: Critical dithering and image processing algorithms are meticulously implemented in `algorithms.py` and are highly optimized with `numba`. This achieves C-like performance speeds essential for real-time pixel manipulation of high-resolution assets.
 
-### Future Enhancements
-
-We are actively working on expanding Dither-Pro's reach:
-
-*   **macOS Support**: Plans are underway to provide native support for macOS, ensuring a consistent and high-performance experience across Apple platforms.
-*   **Web Application**: A web-based version is in development to offer Dither-Pro's powerful features directly in your browser, enhancing accessibility and collaboration.
-
 ## License
 
 This project is licensed under the MIT License. Refer to the [LICENSE](LICENSE) file for comprehensive details.
 
-## 👋 Contributing & Support
 
-We welcome contributions from the community! If you have suggestions, bug reports, or want to contribute code, please feel free to:
-*   Open an issue on the [GitHub Issue Tracker](https://github.com/dovvnloading/Dither-Pro/issues).
-*   Fork the repository and submit a pull request.
-
-Your feedback and contributions are greatly appreciated!
